@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Personal Website">
+  <meta name="keywords" content="HTML, CSS, JavaScript , Portfolio , Ayush Bhavsar">
+  <meta name="author" content="Ayush Bhavsar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Bhavsar - Portfolio Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Ayush Bhavsar</h1>
+
+          <p class="title">Tech Enthusiast</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ayush21bhavsar@gmail.com" class="contact-link"
+                target="_blank">ayush21bhavsar@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 8871258424" class="contact-link">+91 8871258424</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="https://www.linkedin.com/in/ayushbhavsarnitrr/" class="contact-link" target="_blank">Ayush
+                Bhavsar</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/ayushbhavsar21" class="contact-link" target="_blank">ayushbhavsar21</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://maps.app.goo.gl/5UcqWQzavPzk48EQ8" class="social-link" target="_blank">
+              <ion-icon name="location-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/ayushbhavsar21" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ayushbhavsarnitrr/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.instagram.com/ayush.bhavsar214?igsh=MWRnMG8zYjJoNG1qbQ==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am Ayush Bhavsar, an undergraduate student pursuing a degree in Information Technology at the prestigious
+            National Institute of Technology, Raipur.
+            With a keen interest in technology, I have developed proficiency in several programming languages, including
+            C++, Python, and JavaScript.
+          </p>
+
+          <p>
+            My expertise extends beyond coding, as I have also delved into the realm of web development. I am
+            well-versed in React, HTML, and CSS, enabling me to create
+            dynamic and visually appealing websites and user interfaces. Additionally, I have embarked on the exciting
+            journey of machine learning, continuously
+            expanding my knowledge and staying up-to-date with the latest advancements in this rapidly evolving field.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/ml-icon.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  AI-Ml Enthusiast. Constantly learning new thing in the field of Machine Learning.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/c++-icon.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programming</h4>
+
+                <p class="service-item-text">
+                  Highly skilled in Competitive Programming, with a strong foundation in Data Structures and Algorithms.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section>
+          <h3 class="h3 service-title">Have a look at me</h3>
+          <div style="width: 100% ; height: 100%;  display: flex; justify-content: center; " class=" pic">
+            <img style="width: 80%; height: auto;  object-fit: cover; ;border-top-left-radius: 30px;border-bottom-right-radius: 30px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; "
+              src="./assets/images/Myself.jpg" alt="Image">
+          </div>
+        </section>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National Institute Of Technology (NIT) Raipur </h4>
+
+              <span>2022 - 2026</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Macrovision Academy, Burhanpur</h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> St. Theresa Hr. Sec., Burhanpur</h4>
+
+              <span>2020</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <img style="height: 20px; " src= "./assets/images/experience.png" alt="">
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Developer</h4>
+
+              <span> May'24- June'24</span>
+
+              <p class="timeline-text">
+                • Developed a Government Website Management System using
+                React, Node.js, and MySQL </br>
+
+                • Implemented Features : Developed functionalities for user
+                authentication, dynamic content management, and user roles
+                (admin, editor, viewer). Implemented CRUD (Create, Read,
+                Update, Delete) operations for managing various government
+                services and information pages.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Developer / Freelancing</h4>
+
+              <span> March'24</span>
+
+              <p class="timeline-text">
+                Designed and developed a responsive website for Shiv Shakti,
+                a catering and tiffin services company, handling all aspects
+                from UI/UX design to frontend development. Employed
+                SEO strategies and optimized performance for enhanced user
+                experience.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical Executive</h4>
+
+              <span> Feb'24- Present</span>
+
+              <p class="timeline-text">
+                At TEDx NIT Raipur, I lead design and development, utilizing cutting-edge tech to elevate user
+                experience and brand impact.
+                I collaborate closely to plan, execute, and optimize web projects, ensuring alignment with goals and
+                best practices
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- Achivements 
+         
+        
+        -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <img src="./assets/images/achivements.png" alt="">
+            </div>
+
+            <h3 class="h3">Achivements</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Won CodeUtsav 7.0 Central India's Largest Hackathon by NIT Raipur.</h4>
+
+              <!-- <span> Nov'24</span> -->
+
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Finalist at Build for Bharat Hackathon by ONDC.</h4>
+
+              <!-- <span> Nov'24</span> -->
+
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Secured victory in Hack-O-Harbour by IIIT Naya Raipur. </h4>
+
+              <!-- <span> Nov'24</span> -->
+
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">400+ solved questions on various competitive platforms.</h4>
+
+              <!-- <span> Nov'24</span> -->
+
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AIML</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AIML</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <!-- Projects -->
+
+          <ul class="project-list">
+
+            <!-- Jadoo -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ayushbhavsar21/Jadoo">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Jadoo-img.png" alt="Jadoo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Jadoo</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!-- Fashion -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ayushbhavsar21/Fashion">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/fashion-img.png" alt="Fashion" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fashion</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li> -->
+
+            <!-- Hazedefy -->
+            <li class="project-item  active" data-filter-item data-category="aiml">
+              <a href="https://github.com/ayushbhavsar21/Hazedefy">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/hazedefy-img.png" alt="Hazedefy" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hazedefy</h3>
+
+                <p class="project-category">AIML</p>
+
+              </a>
+            </li>
+
+
+            <!-- Movie-Recommendation -->
+            <li class="project-item  active" data-filter-item data-category="aiml">
+              <a href="https://github.com/ayushbhavsar21/Movie-Recommendation">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/movie-img.png" alt="Movie-Recommendation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Movie Recommendation</h3>
+
+                <p class="project-category">AIML</p>
+
+              </a>
+            </li>
+
+            <!-- GuruJi -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ayushbhavsar21/rubix24_Visionaries-United">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/guruji-img.png" alt="GuruJi" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GuruJi</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.5754490426434!2d81.60718457503785!3d21.24867748045625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd79a500dfa7%3A0x1f00563c494340ad!2sNit%20Boys%20Hostel%20(H)%20Sirpur!5e0!3m2!1sen!2sin!4v1718987432264!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formspree.io/f/xovaajpb" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input"  placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
