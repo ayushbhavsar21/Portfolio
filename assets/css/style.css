@@ -147,7 +147,26 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/bg.jpg");
+  background-size:cover;
+  background-attachment: fixed ;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1; /* Ensures the background image stays behind other content */
+}
+
+body{
+   background: var(--smoky-black);
+   background-attachment: fixed ;
+    /* background-image: url("../images/bg.jpg" ) ; */   
+ }
 
 
 
@@ -248,7 +267,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
+  width: 5px;  /*for vertical scrollbar*/
   height: 5px; /* for horizontal scrollbar */
 }
 
